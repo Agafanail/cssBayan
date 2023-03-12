@@ -10,10 +10,15 @@ body{
   margin: 0 auto;
 }
 
+.accordion:hover > .item > .item-lable > .title > .item-icon{
+  width: 1rem;
+  height: 1rem;
+}
+
 h1{
 font-size: 5rem;
 font-weight: 600;
-margin: 0 0 3rem 0;
+margin: 1rem 0 3rem 0;
 }
 
 .item{
@@ -41,19 +46,15 @@ margin: 0 0 3rem 0;
   padding: 1rem 0 1rem 0;
 }
 
+.item-input:checked + .title > .header{
+  color: black;
+}
+
 .item-input:checked + .title > .item-icon{
   transform: rotate(0.5turn);
   width: 1rem;
   height: 1rem;
 }
-
-/* .item-lable{
-display: block;
-padding: 1rem 0 1rem 0;
-font-size: 1.5rem;
-min-width: 90%;
-height: 100%;
-} */
 
 .header{
   font-size: 1.5rem;
