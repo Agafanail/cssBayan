@@ -1,0 +1,88 @@
+@import url(reset.css);
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  height: 300rem;
+}
+
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+h1{
+font-size: 5rem;
+font-weight: 600;
+margin: 0 0 3rem 0;
+}
+
+.item{
+  /* cursor: pointer; */
+}
+
+.meme {
+  display: block;
+  height: 0;
+  margin: 0 auto;
+
+  width: 30%;
+  transition: 0.3s;
+}
+
+.item-input{
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.item-input:checked ~ .meme {
+  height: 100%;
+  width: 40%;
+  padding: 1rem 0 1rem 0;
+}
+
+.item-input:checked + .title > .item-icon{
+  transform: rotate(0.5turn);
+  width: 1rem;
+  height: 1rem;
+}
+
+/* .item-lable{
+display: block;
+padding: 1rem 0 1rem 0;
+font-size: 1.5rem;
+min-width: 90%;
+height: 100%;
+} */
+
+.header{
+  font-size: 1.5rem;
+  min-width: 96%;
+}
+
+.item-lable:hover > .meme{
+  height: 100%;
+  width: 40%;
+  padding: 1rem 0 1rem 0;
+}
+
+.item-lable:hover > .title > .item-icon{
+  transform: rotate(0.5turn);
+  width: 1rem;
+  height: 1rem;
+}
+
+.title{
+  display: flex;
+  padding: 1rem 0 1rem 0;
+  /* justify-content:space-between; */
+  align-items: center;
+  /* margin: 0 0 1rem 0; */
+  border-top: solid black;
+}
+
+.item-icon{
+  height: 0;
+  width: 0;
+  transition: 0.3s;
+}
