@@ -10,9 +10,17 @@ body{
   margin: 0 auto;
 }
 
-.accordion:hover > .item > .item-lable > .title > .item-icon{
+@media(hover:hover){
+  .accordion:hover > .item > .item-lable > .title > .item-icon{
   width: 1rem;
   height: 1rem;
+}
+}
+
+@media(hover:hover){
+  .accordion:hover > .item > .item-lable > .title > .header{
+    color: rgb(222, 116, 116);
+  }
 }
 
 h1{
@@ -84,7 +92,6 @@ h1{
    }
 }
 
-
 .item-input:checked + .title > .header{
   color: black;
 }
@@ -98,6 +105,8 @@ h1{
 .header{
   font-size: 1.5rem;
   min-width: 96%;
+  color: black;
+  transition: 0.3s;
 }
 
 @media (max-width: 1920px) {
@@ -126,7 +135,6 @@ h1{
   }
 }
 
-
 @media (max-width: 1920px) {
   .item-lable:hover > .meme{
     width: 40%;
@@ -152,7 +160,6 @@ h1{
     height: 1rem;
   }
 }
-
 
 .title{
   display: flex;
