@@ -135,6 +135,26 @@ h1{
   }
 }
 
+@media (max-width: 1920px) {
+  @media(hover:hover){
+    .item-lable:hover > .meme{
+      width: 40%;
+      }
+  }
+}
+
+@media (max-width: 820px) {
+  .item-lable:hover > .meme{
+    width: 70%;
+   }
+}
+
+@media (max-width: 320px) {
+  .item-lable:hover > .meme{
+    width: 100%;
+   }
+}
+
 @media(hover:hover){
   .item-lable:hover > .title > .item-icon{
     transform: rotate(0.5turn);
